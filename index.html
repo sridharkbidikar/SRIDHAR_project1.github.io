@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sabgrocery.in</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+    <link rel="stylesheet" href="1stproject.css"/>
+    <script>
+        function stickyMenu(){
+
+            var sticky=document.grtElementById('sticky');
+            if(window.pageYOffset>200)
+             {
+                sticky.classList.add('sticky');
+            }
+            else{
+            sticky.classList.remove('sticky');
+           }
+        }
+
+        window.onscroll=function(){
+            stickyMenu();
+        }
+    </script>
+</head>
+<body>
+    <div class="parallax">
+        <div class="page-title">SabGrocery</div>
+    </div>
+        <div class="menu" id="sticky">
+           <ul class="menu-ul">
+             <a href="#" class="a-menu"><li>Home</li></a>
+             <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+             <a href="#fruits" class="a-menu"><li>Fruits</li></a>
+             <a href="#meat" class="a-menu"><li>Meat & Seafood</li></a>
+             <a href="#grains" class="a-menu"><li>Grains</li></a>
+             <a href="#" class="a-menu"><li>Cart</li></a>
+             <a href="#deals" class="a-menu"><li>Deals</li></a>
+           </ul>
+           <div class="search-box">
+               <form>
+                   <input type="text" placeholder="search..." name="search"
+                   class="search-input"/>
+                   <button type="submit"><i class="fa fa-search"></i></button>
+               </form>
+            </div>
+        </div>
+<!--Home Page Begins-->
+    <div class="container">
+        <a href="#vegetables">
+            <div class="categories">
+                   <img src="veg.jpg" class="item-image"/>
+                   <div class="image-title">Vegetables</div>
+             </div>
+         </a>   
+         <a href="#fruits">
+            <div class="categories">
+                <img src="fruit.jpg" class="item-image"/>
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#meat">
+            <div class="categories">
+                <img src="chicken.jpg" class="item-image"/>
+                <div class="image-title">Meat & Seafood </div>
+            </div>
+        </a>
+        <a href="#grains">
+            <div class="categories">
+                <img src="grains.jpg" class="item-image"/>
+                <div class="image-title">Grains</div>
+            </div>
+        </a>
+    </div> 
+    <!--Deal Begins Here --> 
+        <div class="deals-container" id="deals">
+            <div class="parallax">
+                <div class="title">DEALS</div>
+            </div>
+            <div class="deal">
+                Save 20% on min-purchase of Rs.149 on Vegetables/>
+                <button class="coupon-btn">Add Coupon</button> 
+            </div>
+            <div class="deal">
+                Save 10% on min-purchase of Rs.179 on Fruits/>
+                <br>
+                <button class="coupon-btn">Add Coupon</button> 
+            </div>
+            <div class="deal">
+                Save 15% on min-purchase of Rs.199 on Meat/>
+                <br>
+                <button class="coupon-btn">Add Coupon</button> 
+            </div>
+        </div>
+    <!--Deal Ends Here -->
+    <!--Veg Begins Here -->
+        <div class="deals-container" id="vegetables">
+            <div class="parallax">
+                 <div class="title">VEGETABLES</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="carrot.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Carrot</b><br/>
+                    <div class="item-select">
+                        Price : Rs.99/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250grams</option>
+                        <option>500grams</option>
+                        <option>750grams</option>
+                        <option>1000grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="onion.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Onions</b><br/>
+                    <div class="item-select">
+                        Price : Rs.119/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250grams</option>
+                        <option>500grams</option>
+                        <option>750grams</option>
+                        <option>1000grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div> 
+            <div class="items">
+                <div class="images">
+                    <img src="green.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Greenpapper</b><br/>
+                    <div class="item-select">
+                        Price : Rs.49/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250grams</option>
+                        <option>500grams</option>
+                        <option>750grams</option>
+                        <option>1000grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div> 
+            <div class="items">
+                <div class="images">
+                    <img src="tomato.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Tomatoes</b><br/>
+                    <div class="item-select">
+                        Price : Rs.69/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250grams</option>
+                        <option>500grams</option>
+                        <option>750grams</option>
+                        <option>1000grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="cabbage.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Cabbage</b><br/>
+                    <div class="item-select">
+                        Price : Rs.79/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250grams</option>
+                        <option>500grams</option>
+                        <option>750grams</option>
+                        <option>1000grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="chilli.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Chilli</b><br/>
+                    <div class="item-select">
+                        Price : Rs.159/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250grams</option>
+                        <option>500grams</option>
+                        <option>750grams</option>
+                        <option>1000grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+    </div>
+    <!--Veg Ends Here -->
+<!--Home Page Ends-->
+
+</body>
+</html>
